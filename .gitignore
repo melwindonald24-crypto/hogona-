@@ -1,0 +1,263 @@
+# ============================================
+# TRIP_MANAGER (Hogona) - .gitignore
+# Node.js + Express + EJS Backend
+# ============================================
+
+# ============================================
+# CRITICAL - ENVIRONMENT VARIABLES
+# ============================================
+# NEVER COMMIT THESE FILES!
+.env
+.env.*
+!.env.example
+
+# ============================================
+# NODE.JS DEPENDENCIES
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Optional: Uncomment if you want to ignore lock files
+# (Keep them for consistent dependency versions)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# LOGS & DEBUGGING
+# ============================================
+logs/
+*.log
+npm-debug.log*
+.npm
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# TESTING & COVERAGE
+# ============================================
+coverage/
+*.lcov
+.nyc_output
+.grunt
+
+# ============================================
+# BUILD & DISTRIBUTION
+# ============================================
+dist/
+build/
+*.tgz
+
+# ============================================
+# DATABASE & DATA FILES
+# ============================================
+# MongoDB (if running locally)
+data/
+mongo-data/
+*.mongo
+
+# Database backups
+*.sql
+*.sqlite
+*.db
+*.bak
+*.backup
+
+# Redis
+dump.rdb
+
+# ============================================
+# UPLOADS & USER CONTENT
+# ============================================
+# Public uploads folder (if you add file upload feature)
+public/uploads/
+uploads/
+
+# User-generated images
+public/images/user-*
+public/avatars/
+
+# ============================================
+# TEMPORARY & CACHE FILES
+# ============================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+.parcel-cache/
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.node_repl_history
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+
+# ============================================
+# IDE & EDITOR FILES
+# ============================================
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# ============================================
+# API KEYS & SECRETS
+# ============================================
+# Secret files
+secrets.json
+credentials.json
+serviceAccount.json
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+ssl/
+certs/
+
+# ============================================
+# CLOUD & DEPLOYMENT
+# ============================================
+# PM2 (if contains secrets)
+ecosystem.config.js
+
+# Elastic Beanstalk
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstable/*.global.yml
+
+# Heroku
+.heroku/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# ============================================
+# DOCUMENTATION BUILDS
+# ============================================
+/docs/_build/
+/docs/.doctrees/
+
+# ============================================
+# MISC
+# ============================================
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Session storage
+sessions/
+
+# TypeScript (if you migrate later)
+*.tsbuildinfo
+
+# ============================================
+# PROJECT-SPECIFIC IGNORE
+# ============================================
+# Future: If you add these features, uncomment as needed
+
+# MongoDB local data
+# /mongodb-data/
+
+# Image processing temp files
+# /public/temp-images/
+
+# Email templates cache
+# /email-cache/
+
+# PDF generation temp
+# /pdf-temp/
+
+# Future React build (Phase 3)
+# /frontend/build/
+# /frontend/.env.local
+# /frontend/.env.production.local
+
+# Socket.io session storage (Phase 4)
+# /socket-sessions/
+
+# Map tiles cache (Phase 5)
+# /map-cache/
