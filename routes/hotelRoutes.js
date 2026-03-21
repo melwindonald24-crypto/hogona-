@@ -1,5 +1,5 @@
 import express from "express";
-import rootdir from "../plugins/paths.js";
+import rootdir from "../utils/paths.js";
 import path from "node:path";
 import getHotels from "../controllers/HotelController.js";
 
@@ -21,6 +21,7 @@ HotelRoutes.post("/display",async (req,res)=>{
 })
 
 HotelRoutes.post("/selectHotel",async (req,res)=>{
+    
     
 })
 

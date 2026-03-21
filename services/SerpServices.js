@@ -74,8 +74,11 @@ function extractHotels(results)
 
       type:
         element.type || "hotel",
+
       property_id:
         element.propert_token,
+      
+      booking_links:[], 
 
       }));
     return hotels;
