@@ -15,6 +15,7 @@ HotelRoutes.get("/preferences",(req,res)=>{
 
 HotelRoutes.post("/display",async (req,res)=>{
     const preferences=req.body;
+    await savePreferences(preferences)
     const Hotels=await getHotels(preferences);
     res.render("DisplayHotels",{hotels:Hotels});
     
