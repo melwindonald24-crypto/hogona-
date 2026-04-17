@@ -84,6 +84,7 @@ function extractHotels(results)
     return hotels;
 }
 
+
 const SerpOb={extractHotels,searchHotels};
 
 export default SerpOb;

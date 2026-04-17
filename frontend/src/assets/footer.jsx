@@ -1,13 +1,12 @@
-
-
-const FooterComponent=()=>{
-    return(
-        <footer>
-            <center>creater:MELWIN DONALD</center>
-            <p>2025 HOGONA. All rights reserved.</p>
-        </footer>
-        
-    )
-}
+const FooterComponent = () => {
+  return (
+    <footer className="page-footer">
+      <p>
+        Created by <strong>MELWIN DONALD</strong>
+      </p>
+      <p>{new Date().getFullYear()} HOGONA. All rights reserved.</p>
+    </footer>
+  );
+};
 
 export default FooterComponent;

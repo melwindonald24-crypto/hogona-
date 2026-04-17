@@ -1,4 +1,4 @@
-import SerpOb from "../services/SerpServices.js";
+import SerpOb from "../services/SerpHotelServices.js";
 
 async function getHotels(preferences)
 {

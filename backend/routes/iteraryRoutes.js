@@ -2,7 +2,9 @@ import express from "express";
 
 const IterarayRoutes=express.Router();
 
-IterarayRoutes.get("/display",(req,res)=>{
+IterarayRoutes.post("/display",(req,res)=>{
+    
+
 
 })
 

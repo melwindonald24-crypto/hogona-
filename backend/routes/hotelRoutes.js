@@ -9,7 +9,7 @@ const HotelRoutes=express.Router();
 HotelRoutes.get("/preferences",(req,res)=>{
     console.log(req.method, req.path, )
     console.log(rootdir);
-    res.sendFile(path.join(rootdir,"views","userPlan.html"))
+    
 
 })
 
@@ -17,7 +17,7 @@ HotelRoutes.post("/display",async (req,res)=>{
     const preferences=req.body;
     await savePreferences(preferences)
     const Hotels=await getHotels(preferences);
-    res.render("DisplayHotels",{hotels:Hotels});
+
     
 })
 

@@ -1,10 +1,5 @@
-
 const LoginContainer = ({ children }) => {
-    return (
-        <div>
-            {children}
-        </div>
-    )
-}
+  return <div className="panel-card">{children}</div>;
+};
 
 export default LoginContainer;
